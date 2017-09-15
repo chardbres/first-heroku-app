@@ -7,9 +7,9 @@ weeks. Now let's 'go public' and share our apps with the world!
 
 ## Prerequisites
 
--   [ga-wdi-boston/rails-api](https://github.com/ga-wdi-boston/rails-api)
--   [ga-wdi-boston/rails-activerecord-crud](https://github.com/ga-wdi-boston/rails-activerecord-crud)
--   This guide assumes you have followed [these installation instructions](https://github.com/ga-wdi-boston/rails-api-template#installation) unequivocally.
+-   [rails-api](https://git.generalassemb.ly/ga-wdi-boston/rails-api)
+-   [rails-activerecord-crud](https://git.generalassemb.ly/ga-wdi-boston/rails-activerecord-crud)
+-   This guide assumes you have followed [these installation instructions](https://git.generalassemb.ly/ga-wdi-boston/rails-api-template#installation) unequivocally.
 
 ## Objectives
 
@@ -73,7 +73,7 @@ onto `master`. Push your updated `master` to GitHub, then to Heroku.
 ```sh
 git checkout master
 git merge my-feature # merge your working code
-git push # update GitHub
+git push origin master # update GitHub
 git push heroku master # update heroku
 ```
 
@@ -139,7 +139,7 @@ Your app will become immediately available at it's new subdomain,
 
 ### Share Your App **(REQUIRED)**
 
-1. Open an issue on this repository [here](https://github.com/ga-wdi-boston/rails-heroku-setup-guide/issues/new)
+1. Open an issue on this repository [here](https://git.generalassemb.ly/ga-wdi-boston/rails-heroku-setup-guide/issues/new)
 1. Include the deployed URL of your heroku app in the description.
 
 ## Heroku Command Reference
