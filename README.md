@@ -17,7 +17,8 @@ weeks. Now let's 'go public' and share our apps with the world!
 -   Create a Heroku app from the command line.
 -   Push the latest code to Heroku.
 -   Migrate the production database.
--   Open an issue on this repository, with the url to your deployed heroku app.
+-   Grab the link to your deployed API and paste it into the api_url.txt file.
+- Open a Pull Request to the GA repo so that we may check your API link.
 
 ## Getting Set Up
 
