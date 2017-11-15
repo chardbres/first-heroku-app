@@ -17,7 +17,8 @@ weeks. Now let's 'go public' and share our apps with the world!
 -   Create a Heroku app from the command line.
 -   Push the latest code to Heroku.
 -   Migrate the production database.
--   Open an issue on this repository, with the url to your deployed heroku app.
+-   Grab the link to your deployed API and paste it into the api_url.txt file.
+- Open a Pull Request to the GA repo so that we may check your API link.
 
 ## Getting Set Up
 
@@ -149,22 +150,15 @@ are some of the more common ones.
 
 |                Commands                |                                                 Behavior                                                 |
 | -------------------------------------- | -------------------------------------------------------------------------------------------------------- |
-|           `heroku apps:info`           |                                  Get info about ALL of our Heroku apps.                                  |
-| `heroku apps:info --app {name_of_app}` |                                  Get info about a specific Heroku app.                                   |
-| `heroku apps:open --app {name_of_app}` |            Open any given Heroku app <br> (other than the one we're currently working with.)             |
-|             `heroku logs`              |                                   Logs from the currently running app.                                   |
-|              `heroku ps`               |                              Processes running in your heroku application.                               |
-|           `heroku releases`            |      Each time you deploy to heroku you are creating a "release". This command shows all releases.       |
-|            `heroku pg:info`            | Access Postgres from within Heroku and show the heroku plan, connections, pg version, data size, tables. |
-|            `heroku pg:psql`            |                                      ... and open a `psql` console.                                      |
-|            `heroku run ...`            |                                    Run a program from within Heroku.                                     |
+|             `heroku logs [--tail]`              |                                   Running just `heroku logs` will show you the server logs from your deployed API. The `--tail` flag is optional.                        |
+|            `heroku run ...`            |                                    Run a program from within Heroku. Examples (`heroku run rails console`, `heroku run rake db:migrate`).                                     |
 |            `heroku config`             |                           Environmental variables in your current Heroku app.                            |
-|            `heroku config:set SECRET_KEY_BASE=$(rake secret)`            |                                    Set Secret Key                                     |
-|            `heroku config:set SECRET_TOKEN=$(rake secret)`            |                                    Set TOKEN                                     |
-|            `heroku config:set CLIENT_ORIGIN=https://yourgithubname.github.io`            |                                    Set CLIENT_ORIGIN                                     |
-|            `heroku apps:rename newname (optional)`            |                                    Rename heroku app name (entirely optional)                                     |
-|            `heroku restart`            |                                    restart heroku                                     |
-|            `heroku open`            |                                    Open your heroku app in default browser                                     |
+|            `heroku config:set SECRET_KEY_BASE=$(rake secret)`            |                                    Set Secret Key.                                     |
+|            `heroku config:set SECRET_TOKEN=$(rake secret)`            |                                    Set TOKEN.                                     |
+|            `heroku config:set CLIENT_ORIGIN=https://yourgithubname.github.io`            |                                    Set CLIENT_ORIGIN.                                     |
+|            `heroku apps:rename newname`            |                                    Rename heroku app name (entirely optional).                                     |
+|            `heroku restart`            |                                    Restart the heroku app, make sure you do this after changing your API.                                     |
+|            `heroku open`            |                                    Open your heroku app in default browser.                                     |
 |            `heroku --help`            |                                    Displays a heroku CLI usage summary.                                     |
 
 
@@ -188,7 +182,7 @@ run `ls -l`, `happy.txt` will be missing!
 The typical workaround is to save files in cloud storage such as [Amazon
 S3](https://aws.amazon.com/s3/); more on this in the near future.
 
-<img width="400" alt="herokuapp_png_1_366x768_pixels" src="http://www.thehinzadventures.com/wp-content/uploads/2015/03/54843046.jpg">
+![](https://www.thehinzadventures.com/wp-content/uploads/2015/03/54843046.jpg)
 
 ## Troubleshooting
 
