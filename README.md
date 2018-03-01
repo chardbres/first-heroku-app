@@ -43,9 +43,8 @@ to Heroku:
 - [ ] Run `heroku create` in the command line in the root of your Rails API to
     create a new (blank) app on Heroku.
 - [ ] Push your latest code to Heroku (`git push heroku master`)
-- [ ] Update your heroku database by telling Heroku to run your migration files (`heroku run rake db:migrate`).
-    If you have any other rake tasks that need to run (e.g. `rake db:seed`), run
-    those with `heroku run` as well.
+- [ ] Update your heroku database by telling Heroku to run your migration files (`heroku run rails db:migrate`).
+    If you have any other rails tasks that need to run (e.g. `rails db:seed`), run those with `heroku run` as well.
 - [ ] Set your secrets. (Either by using the [command line](#set-your-secrets) or by using the heroku app panel in your browser)
 - [ ] Check your work by restarting heroku and opening your heroku application.
 
@@ -83,15 +82,15 @@ Once you've deployed your code, you can safely run new migrations. You'll need
 to do this step every time you have new migrations.
 
 ```sh
-heroku run rake db:migrate
+heroku run rails db:migrate
 ```
 
 If you have seeds or examples, or if you've updated seeds or examples, you
 should also run them on heroku.
 
 ```sh
-heroku run rake db:seed
-heroku run rake db:examples
+heroku run rails db:seed
+heroku run rails db:examples
 ```
 
 ### Set your Secrets
@@ -99,11 +98,11 @@ heroku run rake db:examples
 Set your environmental variables in your heroku app.
 
 ```sh
-heroku config:set SECRET_KEY_BASE=$(rake secret)
+heroku config:set SECRET_KEY_BASE=$(rails secret)
 ```
 
 ```sh
-heroku config:set SECRET_TOKEN=$(rake secret)
+heroku config:set SECRET_TOKEN=$(rails secret)
 ```
 
 ```sh
@@ -150,10 +149,10 @@ are some of the more common ones.
 |                Commands                |                                                 Behavior                                                 |
 | -------------------------------------- | -------------------------------------------------------------------------------------------------------- |
 |             `heroku logs [--tail]`              |                                   Running just `heroku logs` will show you the server logs from your deployed API. The `--tail` flag is optional.                        |
-|            `heroku run ...`            |                                    Run a program from within Heroku. Examples (`heroku run rails console`, `heroku run rake db:migrate`).                                     |
+|            `heroku run ...`            |                                    Run a program from within Heroku. Examples (`heroku run rails console`, `heroku run rails db:migrate`).                                     |
 |            `heroku config`             |                           Environmental variables in your current Heroku app.                            |
-|            `heroku config:set SECRET_KEY_BASE=$(rake secret)`            |                                    Set Secret Key.                                     |
-|            `heroku config:set SECRET_TOKEN=$(rake secret)`            |                                    Set TOKEN.                                     |
+|            `heroku config:set SECRET_KEY_BASE=$(rails secret)`            |                                    Set Secret Key.                                     |
+|            `heroku config:set SECRET_TOKEN=$(rails secret)`            |                                    Set TOKEN.                                     |
 |            `heroku config:set CLIENT_ORIGIN=https://yourgithubname.github.io`            |                                    Set CLIENT_ORIGIN.                                     |
 |            `heroku apps:rename newname`            |                                    Rename heroku app name (entirely optional).                                     |
 |            `heroku restart`            |                                    Restart the heroku app, make sure you do this after changing your API.                                     |
@@ -188,10 +187,10 @@ These are the commands required for deploying to heroku with rails. If your hero
 
 - `heroku create`
 - `git push heroku master`
-- `heroku run rake db:migrate`
-- `heroku run rake db:seed`
-- `heroku config:set SECRET_KEY_BASE=$(rake secret)`
-- `heroku config:set SECRET_TOKEN=$(rake secret)`
+- `heroku run rails db:migrate`
+- `heroku run rails db:seed`
+- `heroku config:set SECRET_KEY_BASE=$(rails secret)`
+- `heroku config:set SECRET_TOKEN=$(rails secret)`
 - `heroku config:set CLIENT_ORIGIN=https://yourgithubname.github.io`
 - `heroku apps:rename newname` (optional)
 - `heroku restart`
