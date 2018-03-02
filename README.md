@@ -8,7 +8,6 @@ weeks. Now let's 'go public' and share our apps with the world!
 ## Prerequisites
 
 - [rails-api](https://git.generalassemb.ly/ga-wdi-boston/rails-api)
-- [rails-activerecord-crud](https://git.generalassemb.ly/ga-wdi-boston/rails-activerecord-crud)
 - This guide assumes you have followed [these installation instructions](https://git.generalassemb.ly/ga-wdi-boston/rails-api-template#installation) up to where the steps mention Heroku.
 
 ## Objectives
