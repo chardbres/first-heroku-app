@@ -45,7 +45,7 @@ to Heroku:
 - [ ] Update your heroku database by telling Heroku to run your migration files (`heroku run rails db:migrate`).
     If you have any other rails tasks that need to run (e.g. `rails db:seed`), run those with `heroku run` as well.
 - [ ] Set your secrets. (Either by using the [command line](#set-your-secrets) or by using the heroku app panel in your browser)
-- [ ] Check your work by restarting heroku and opening your heroku application.
+- [ ] Check your work by restarting heroku (`heroku restart`) and opening your heroku application.
 
 Let's look at each of these steps in detail.
 
@@ -137,8 +137,8 @@ Your app will become immediately available at it's new subdomain,
 
 ### Share Your App **(REQUIRED)**
 
-1. Open an issue on this repository [here](https://git.generalassemb.ly/ga-wdi-boston/rails-heroku-setup-guide/issues/new)
-1. Include the deployed URL of your heroku app in the description.
+1. Open a Pull Request on this repository [here](https://git.generalassemb.ly/ga-wdi-boston/rails-heroku-setup-guide/)
+1. Include the deployed URL of your heroku app in the PR.
 
 ## Heroku Command Reference
 
