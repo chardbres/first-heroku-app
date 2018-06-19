@@ -195,6 +195,13 @@ These are the commands required for deploying to heroku with rails. If your hero
 - `heroku restart`
 - `heroku open`
 
+If you have successfully deployed your Rails API but are experiencing problems
+with the production database (note that the production database is _entirely_
+seperate from your development database), you may find it useful to use the
+command `heroku pg:psql` to connect to the production database with the PSQL
+client. Be cautious though, it's possible to accidentally destroy production
+data from the CLI.
+
 ## Additional Resources
 
 - [Heroku Command Line](https://devcenter.heroku.com/categories/command-line)
