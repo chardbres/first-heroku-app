@@ -28,7 +28,9 @@ things you'll need to do first.
 1. **Create a Heroku account**, at [Create a Heroku Account](https://www.heroku.com).
     You will be sent an activation email, so be sure to check your inbox so that
     you can activate your account.
-1. Install the Heroku Command Line Tools: run `brew install heroku`.
+1. Install the Heroku Command Line Tools:
+   - On macOS, run `brew install heroku`
+   - On Ubuntu, run `sudo snap install heroku --classic`
 1. **Log into Heroku** by running `heroku auth:login` from the console and providing
     your Heroku credentials when asked. Once you log in, if you're prompted
     to add these credentials to your keychain, say yes. *You will not be able*
@@ -109,6 +111,8 @@ heroku config:set CLIENT_ORIGIN=https://yourgithubname.github.io
 ```
 
 **IMPORTANT NOTE:** The URL in the above command must NOT have a trailing slash
+on the end. If you're experiencing CORS issues, ensure that your `CLIENT_ORIGIN`
+variable has no slash on the end.
 
 ### Check Your Work
 
