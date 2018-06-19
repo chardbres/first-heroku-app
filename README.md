@@ -29,7 +29,7 @@ things you'll need to do first.
     You will be sent an activation email, so be sure to check your inbox so that
     you can activate your account.
 1. Install the Heroku Command Line Tools: run `brew install heroku`.
-1. **Log into Heroku** by running `heroku login` from the console and providing
+1. **Log into Heroku** by running `heroku auth:login` from the console and providing
     your Heroku credentials when asked. Once you log in, if you're prompted
     to add these credentials to your keychain, say yes. *You will not be able*
     *to see your password*
