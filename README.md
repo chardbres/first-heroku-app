@@ -108,6 +108,8 @@ heroku config:set SECRET_TOKEN=$(rails secret)
 heroku config:set CLIENT_ORIGIN=https://yourgithubname.github.io
 ```
 
+**IMPORTANT NOTE:** The URL in the above command must NOT have a trailing slash
+
 ### Check Your Work
 
 Restart your application and check it out in the browser.
