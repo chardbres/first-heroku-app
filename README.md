@@ -3,7 +3,7 @@
 # Rails Deployment with Heroku
 
 You've learned a lot about how to build a Rails application over the last few
-weeks. Now let's 'go public' and share our apps with the world!
+weeks. Now let's "go public" and share our apps with the world!
 
 ## Prerequisites
 
@@ -17,7 +17,7 @@ weeks. Now let's 'go public' and share our apps with the world!
 - Create a Heroku app from the command line.
 - Push the latest code to Heroku.
 - Migrate the production database.
-- Grab the link to your deployed API and paste it into the api_url.txt file.
+- Grab the link to your deployed API and paste it into the `api_url.txt` file.
 - Open a Pull Request to the GA repo so that we may check your API link.
 
 ## Getting Set Up
@@ -30,12 +30,12 @@ things you'll need to do first.
     You will be sent an activation email, so be sure to check your inbox so that
     you can activate your account.
 1. Install the Heroku Command Line Tools:
-   - On macOS, run `brew install heroku`
-   - On Ubuntu, run `sudo snap install heroku --classic`
-1. **Log into Heroku** by running `heroku auth:login` from the console and providing
+   - On macOS, run `brew install heroku`.
+   - On Ubuntu, run `sudo snap install heroku --classic`.
+1. **Login to Heroku** by running `heroku auth:login` from the console and providing
     your Heroku credentials when asked. Once you log in, if you're prompted
     to add these credentials to your keychain, say yes. *You will not be able*
-    *to see your password*
+    *to see your password*.
 
 ## Deploying to Heroku: Checklist
 
@@ -44,12 +44,12 @@ to Heroku:
 
 - [ ] Run `heroku create` in the command line in the root of your Rails API to
     create a new (blank) app on Heroku.
-- [ ] Push your latest code to Heroku (`git push heroku master`)
+- [ ] Push your latest code to Heroku (`git push heroku master`).
 - [ ] Update your Heroku database by telling Heroku to run your migration files
       (`heroku run rails db:migrate`). If you have any other rails tasks that
       need to run (e.g. `rails db:seed`), run those with `heroku run` as well.
-- [ ] Set your secrets. (Either by using the [command line](#set-your-secrets)
-      or by using the heroku app panel in your browser)
+- [ ] Set your secrets: either by using the [command line](#set-your-secrets)
+      or by using the heroku app panel in your browser.
 - [ ] Check your work by restarting Heroku (`heroku restart`) and opening your
       heroku application.
 
@@ -71,8 +71,8 @@ something like:
 
 ### Push `master` to Heroku
 
-Only keep clean, working code on `master`. After you complete a feature merge it
-onto `master`. Push your updated `master` to GitHub, then to Heroku.
+Only keep clean, working code on `master`. After you complete a feature, merge
+it onto `master`. Push your updated `master` to GitHub, then to Heroku.
 
 ```sh
 git checkout master
@@ -114,9 +114,9 @@ heroku config:set SECRET_TOKEN=$(rails secret)
 heroku config:set CLIENT_ORIGIN=https://yourgithubname.github.io
 ```
 
-**IMPORTANT NOTE:** The URL in the above command must NOT have a trailing slash
+_**IMPORTANT NOTE:** The URL in the above command must NOT have a trailing slash
 on the end. If you're experiencing CORS issues, ensure that your `CLIENT_ORIGIN`
-variable has no slash on the end.
+variable has no slash on the end._
 
 ### Check Your Work
 
@@ -147,12 +147,12 @@ Your app will become immediately available at it's new subdomain,
 
 ### Share Your App **(REQUIRED)**
 
-1. Open a Pull Request on this repository [here](https://git.generalassemb.ly/ga-wdi-boston/rails-heroku-setup-guide/)
-1. Include the deployed URL of your Heroku app in the PR.
+1. Open a Pull Request on this repository [here](https://git.generalassemb.ly/ga-wdi-boston/rails-heroku-setup-guide/compare).
+1. Include the deployed URL of your Heroku app in the Pull Request.
 
 ## Heroku Command Reference
 
-A full list of Heroku commands can be access by running `heroku --help`; below
+A full list of Heroku commands can be accessed by running `heroku --help`; below
 are some of the more common ones.
 
 |                Commands                |                                                 Behavior                                                 |
@@ -170,7 +170,7 @@ are some of the more common ones.
 
 ## WARNING: Ephemeral Filesystem
 
-One serious limitation of Heroku is that it provides an 'ephemeral filesystem';
+One serious limitation of Heroku is that it provides an "ephemeral filesystem";
 in other words, if you try to save a new file inside the repo (e.g. an uploaded
 image file), it will disappear when your app is restarted or redeployed.
 
