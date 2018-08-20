@@ -8,11 +8,12 @@ weeks. Now let's 'go public' and share our apps with the world!
 ## Prerequisites
 
 - [rails-api](https://git.generalassemb.ly/ga-wdi-boston/rails-api)
-- This guide assumes you have followed [these installation instructions](https://git.generalassemb.ly/ga-wdi-boston/rails-api-template#installation) up to where the steps mention Heroku.
+- This guide assumes you have followed [these installation instructions](https://git.generalassemb.ly/ga-wdi-boston/rails-api-template#installation)
+  up to where the steps mention Heroku.
 
 ## Objectives
 
-- Create a repository on github for your project.
+- Create a repository on GitHub for your project.
 - Create a Heroku app from the command line.
 - Push the latest code to Heroku.
 - Migrate the production database.
@@ -24,7 +25,7 @@ weeks. Now let's 'go public' and share our apps with the world!
 Before you can begin deploying your applications to Heroku, there are some
 things you'll need to do first.
 
-1. **Create a github repository for your project**, at [Create a repo](https://help.github.com/articles/create-a-repo/).
+1. **Create a GitHub repository for your project**, at [Create a repo](https://help.github.com/articles/create-a-repo/).
 1. **Create a Heroku account**, at [Create a Heroku Account](https://www.heroku.com).
     You will be sent an activation email, so be sure to check your inbox so that
     you can activate your account.
@@ -44,10 +45,13 @@ to Heroku:
 - [ ] Run `heroku create` in the command line in the root of your Rails API to
     create a new (blank) app on Heroku.
 - [ ] Push your latest code to Heroku (`git push heroku master`)
-- [ ] Update your heroku database by telling Heroku to run your migration files (`heroku run rails db:migrate`).
-    If you have any other rails tasks that need to run (e.g. `rails db:seed`), run those with `heroku run` as well.
-- [ ] Set your secrets. (Either by using the [command line](#set-your-secrets) or by using the heroku app panel in your browser)
-- [ ] Check your work by restarting heroku (`heroku restart`) and opening your heroku application.
+- [ ] Update your Heroku database by telling Heroku to run your migration files
+      (`heroku run rails db:migrate`). If you have any other rails tasks that
+      need to run (e.g. `rails db:seed`), run those with `heroku run` as well.
+- [ ] Set your secrets. (Either by using the [command line](#set-your-secrets)
+      or by using the heroku app panel in your browser)
+- [ ] Check your work by restarting Heroku (`heroku restart`) and opening your
+      heroku application.
 
 Let's look at each of these steps in detail.
 
@@ -74,7 +78,7 @@ onto `master`. Push your updated `master` to GitHub, then to Heroku.
 git checkout master
 git merge my-feature # merge your working code
 git push origin master # update GitHub
-git push heroku master # update heroku
+git push heroku master # update Heroku
 ```
 
 ### Update Heroku's Database
@@ -87,7 +91,7 @@ heroku run rails db:migrate
 ```
 
 If you have seeds or examples, or if you've updated seeds or examples, you
-should also run them on heroku.
+should also run them on Heroku.
 
 ```sh
 heroku run rails db:seed
@@ -96,7 +100,7 @@ heroku run rails db:examples
 
 ### Set your Secrets
 
-Set your environmental variables in your heroku app.
+Set your environmental variables in your Heroku app.
 
 ```sh
 heroku config:set SECRET_KEY_BASE=$(rails secret)
@@ -132,7 +136,7 @@ That's normal, **unless** you have defined a root route.
 ### Change Your App's Name (optional)
 
 If you wish you can rename your app at any time. It must be unique across all
-apps deployed to heroku.
+apps deployed to Heroku.
 
 ```sh
 heroku apps:rename newname
@@ -144,7 +148,7 @@ Your app will become immediately available at it's new subdomain,
 ### Share Your App **(REQUIRED)**
 
 1. Open a Pull Request on this repository [here](https://git.generalassemb.ly/ga-wdi-boston/rails-heroku-setup-guide/)
-1. Include the deployed URL of your heroku app in the PR.
+1. Include the deployed URL of your Heroku app in the PR.
 
 ## Heroku Command Reference
 
@@ -159,10 +163,10 @@ are some of the more common ones.
 |            `heroku config:set SECRET_KEY_BASE=$(rails secret)`            |                                    Set Secret Key.                                     |
 |            `heroku config:set SECRET_TOKEN=$(rails secret)`            |                                    Set TOKEN.                                     |
 |            `heroku config:set CLIENT_ORIGIN=https://yourgithubname.github.io`            |                                    Set CLIENT_ORIGIN.                                     |
-|            `heroku apps:rename newname`            |                                    Rename heroku app name (entirely optional).                                     |
-|            `heroku restart`            |                                    Restart the heroku app, make sure you do this after changing your API.                                     |
-|            `heroku open`            |                                    Open your heroku app in default browser.                                     |
-|            `heroku --help`            |                                    Displays a heroku CLI usage summary.                                     |
+|            `heroku apps:rename newname`            |                                    Rename Heroku app name (entirely optional).                                     |
+|            `heroku restart`            |                                    Restart the Heroku app, make sure you do this after changing your API.                                     |
+|            `heroku open`            |                                    Open your Heroku app in default browser.                                     |
+|            `heroku --help`            |                                    Displays a Heroku CLI usage summary.                                     |
 
 ## WARNING: Ephemeral Filesystem
 
@@ -178,7 +182,7 @@ touch happy.txt; echo 'is happy' > happy.txt
 cat happy.txt
 ```
 
-Then, hit Ctrl-D to get out of heroku bash shell. If you re-open the shell and
+Then, hit Ctrl-D to get out of Heroku bash shell. If you re-open the shell and
 run `ls -l`, `happy.txt` will be missing!
 
 The typical workaround is to save files in cloud storage such as [Amazon
@@ -188,7 +192,8 @@ S3](https://aws.amazon.com/s3/); more on this in the near future.
 
 ## Troubleshooting
 
-These are the commands required for deploying to heroku with rails. If your heroku deployment isn't working as expected, review these steps carefully.
+These are the commands required for deploying to Heroku with rails. If your
+Heroku deployment isn't working as expected, review these steps carefully.
 
 - `heroku create`
 - `git push heroku master`
@@ -203,7 +208,7 @@ These are the commands required for deploying to heroku with rails. If your hero
 
 If you have successfully deployed your Rails API but are experiencing problems
 with the production database (note that the production database is _entirely_
-seperate from your development database), you may find it useful to use the
+separate from your development database), you may find it useful to use the
 command `heroku pg:psql` to connect to the production database with the PSQL
 client. Be cautious though, it's possible to accidentally destroy production
 data from the CLI.
