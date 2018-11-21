@@ -30,8 +30,8 @@ things you'll need to do first.
     You will be sent an activation email, so be sure to check your inbox so that
     you can activate your account.
 1. Install the Heroku Command Line Tools:
-   - On macOS, run `brew install heroku`.
-   - On Ubuntu, run `sudo snap install heroku --classic`.
+   - On macOS, run `brew install heroku/brew/heroku`.
+   - On Ubuntu/WSL, run `curl https://cli-assets.heroku.com/install.sh | sh`.
 1. **Login to Heroku** by running `heroku auth:login` from the console and providing
     your Heroku credentials when asked. Once you log in, if you're prompted
     to add these credentials to your keychain, say yes. *You will not be able*
