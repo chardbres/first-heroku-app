@@ -39,19 +39,15 @@ things you'll need to do first.
 
 ## Deploying to Heroku: Checklist
 
-Now you're set up to use Heroku. To deploy a new application
-to Heroku:
+Now you're set up to use Heroku.
 
-- [ ] Run `heroku create` in the command line in the root of your Rails API to
-    create a new (blank) app on Heroku.
-- [ ] Push your latest code to Heroku (`git push heroku master`).
-- [ ] Update your Heroku database by telling Heroku to run your migration files
-      (`heroku run rails db:migrate`). If you have any other rails tasks that
-      need to run (e.g. `rails db:seed`), run those with `heroku run` as well.
-- [ ] Set your secrets: either by using the [command line](#set-your-secrets)
-      or by using the heroku app panel in your browser.
-- [ ] Check your work by restarting Heroku (`heroku restart`) and opening your
-      heroku application.
+To deploy a new application to Heroku:
+
+- [ ] [Create a New Heroku App](https://git.generalassemb.ly/ga-wdi-boston/rails-heroku-setup-guide#create-a-new-heroku-app)
+- [ ] [Push `master` to Heroku](https://git.generalassemb.ly/ga-wdi-boston/rails-heroku-setup-guide#push-master-to-heroku)
+- [ ] [Update Heroku's Database](https://git.generalassemb.ly/ga-wdi-boston/rails-heroku-setup-guide#update-herokus-database)
+- [ ] [Set Your Secrets](https://git.generalassemb.ly/ga-wdi-boston/rails-heroku-setup-guide#set-your-secrets)
+- [ ] [Check Your Work](https://git.generalassemb.ly/ga-wdi-boston/rails-heroku-setup-guide#check-your-work)
 
 Let's look at each of these steps in detail.
 
@@ -98,7 +94,7 @@ heroku run rails db:seed
 heroku run rails db:examples
 ```
 
-### Set your Secrets
+### Set Your Secrets
 
 Set your environmental variables in your Heroku app.
 
