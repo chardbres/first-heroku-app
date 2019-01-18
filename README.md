@@ -51,6 +51,8 @@ To deploy a new application to Heroku:
 
 Let's look at each of these steps in detail.
 
+---
+
 ### Create a New Heroku App
 
 Go to the root of your repo and run `heroku create`. This will create an
@@ -65,6 +67,8 @@ something like:
     origin  git@github.com:tdyer/wdi_4_rails_hw_tdd_hacker_news.git (push)
 ```
 
+---
+
 ### Push `master` to Heroku
 
 Only keep clean, working code on `master`. After you complete a feature, merge
@@ -76,6 +80,8 @@ git merge my-feature # merge your working code
 git push origin master # update GitHub
 git push heroku master # update Heroku
 ```
+
+---
 
 ### Update Heroku's Database
 
@@ -93,6 +99,8 @@ should also run them on Heroku.
 heroku run rails db:seed
 heroku run rails db:examples
 ```
+
+---
 
 ### Set Your Secrets
 
@@ -114,6 +122,8 @@ _**IMPORTANT NOTE:** The URL in the above command must NOT have a trailing slash
 on the end. If you're experiencing CORS issues, ensure that your `CLIENT_ORIGIN`
 variable has no slash on the end._
 
+---
+
 ### Check Your Work
 
 Restart your application and check it out in the browser.
@@ -129,6 +139,8 @@ You'll probably see something like this:
 
 That's normal, **unless** you have defined a root route.
 
+---
+
 ### Change Your App's Name (optional)
 
 If you wish you can rename your app at any time. It must be unique across all
@@ -140,6 +152,8 @@ heroku apps:rename newname
 
 Your app will become immediately available at it's new subdomain,
 `newname.herokuapp.com`.
+
+---
 
 ### Share Your App **(REQUIRED)**
 
