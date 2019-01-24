@@ -25,8 +25,8 @@ weeks. Now let's "go public" and share our apps with the world!
 Before you can begin deploying your applications to Heroku, there are some
 things you'll need to do first.
 
-1. **Create a GitHub repository for your project**, at [Create a repo](https://help.github.com/articles/create-a-repo/).
-1. **Create a Heroku account**, at [Create a Heroku Account](https://www.heroku.com).
+1. [Create a GitHub repository for your project](https://help.github.com/articles/create-a-repo/).
+1. [Create a Heroku account](https://www.heroku.com).
     You will be sent an activation email, so be sure to check your inbox so that
     you can activate your account.
 1. Install the Heroku Command Line Tools:
@@ -39,21 +39,19 @@ things you'll need to do first.
 
 ## Deploying to Heroku: Checklist
 
-Now you're set up to use Heroku. To deploy a new application
-to Heroku:
+Now you're set up to use Heroku.
 
-- [ ] Run `heroku create` in the command line in the root of your Rails API to
-    create a new (blank) app on Heroku.
-- [ ] Push your latest code to Heroku (`git push heroku master`).
-- [ ] Update your Heroku database by telling Heroku to run your migration files
-      (`heroku run rails db:migrate`). If you have any other rails tasks that
-      need to run (e.g. `rails db:seed`), run those with `heroku run` as well.
-- [ ] Set your secrets: either by using the [command line](#set-your-secrets)
-      or by using the heroku app panel in your browser.
-- [ ] Check your work by restarting Heroku (`heroku restart`) and opening your
-      heroku application.
+To deploy a new application to Heroku:
+
+- [ ] [Create a New Heroku App](https://git.generalassemb.ly/ga-wdi-boston/rails-heroku-setup-guide#create-a-new-heroku-app)
+- [ ] [Push `master` to Heroku](https://git.generalassemb.ly/ga-wdi-boston/rails-heroku-setup-guide#push-master-to-heroku)
+- [ ] [Update Heroku's Database](https://git.generalassemb.ly/ga-wdi-boston/rails-heroku-setup-guide#update-herokus-database)
+- [ ] [Set Your Secrets](https://git.generalassemb.ly/ga-wdi-boston/rails-heroku-setup-guide#set-your-secrets)
+- [ ] [Check Your Work](https://git.generalassemb.ly/ga-wdi-boston/rails-heroku-setup-guide#check-your-work)
 
 Let's look at each of these steps in detail.
+
+---
 
 ### Create a New Heroku App
 
@@ -69,6 +67,8 @@ something like:
     origin  git@github.com:tdyer/wdi_4_rails_hw_tdd_hacker_news.git (push)
 ```
 
+---
+
 ### Push `master` to Heroku
 
 Only keep clean, working code on `master`. After you complete a feature, merge
@@ -80,6 +80,8 @@ git merge my-feature # merge your working code
 git push origin master # update GitHub
 git push heroku master # update Heroku
 ```
+
+---
 
 ### Update Heroku's Database
 
@@ -98,7 +100,9 @@ heroku run rails db:seed
 heroku run rails db:examples
 ```
 
-### Set your Secrets
+---
+
+### Set Your Secrets
 
 Set your environmental variables in your Heroku app.
 
@@ -118,6 +122,8 @@ _**IMPORTANT NOTE:** The URL in the above command must NOT have a trailing slash
 on the end. If you're experiencing CORS issues, ensure that your `CLIENT_ORIGIN`
 variable has no slash on the end._
 
+---
+
 ### Check Your Work
 
 Restart your application and check it out in the browser.
@@ -133,6 +139,8 @@ You'll probably see something like this:
 
 That's normal, **unless** you have defined a root route.
 
+---
+
 ### Change Your App's Name (optional)
 
 If you wish you can rename your app at any time. It must be unique across all
@@ -145,9 +153,11 @@ heroku apps:rename newname
 Your app will become immediately available at it's new subdomain,
 `newname.herokuapp.com`.
 
+---
+
 ### Share Your App **(REQUIRED)**
 
-1. Open a Pull Request on this repository [here](https://git.generalassemb.ly/ga-wdi-boston/rails-heroku-setup-guide/compare).
+1. [Open a Pull Request on this repository](https://git.generalassemb.ly/ga-wdi-boston/rails-heroku-setup-guide/compare).
 1. Include the deployed URL of your Heroku app in the Pull Request.
 
 ## Heroku Command Reference
