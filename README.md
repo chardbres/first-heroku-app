@@ -24,7 +24,7 @@ After this lesson, developers will be able to:
 
 ### What is Heroku?
 
-Heroku is a PaaS (Platform as a Service) that enables developers to quickly deploy, scale and manage their applciations on the web. Heroku manages many aspects of managing a web server and deploying code, simplifying [DevOps](https://en.wikipedia.org/wiki/DevOps) for many.  Its an invaluable tool for developers of all levels, freeing us up to do what we really want to do: write code! Read more about [Heroko and its history](https://generalassemb.ly/coding/full-stack-web-development/heroku). 
+Heroku is a PaaS (Platform as a Service) that enables developers to quickly deploy, scale and manage their applciations on the web. Heroku manages many aspects of managing a web server and deploying code, simplifying [DevOps](https://en.wikipedia.org/wiki/DevOps) for many.  Its an invaluable tool for developers of all levels, freeing us up to do what we really want to do: write code! Read more about [Heroku and its history](https://generalassemb.ly/coding/full-stack-web-development/heroku). 
 
 
 ### Getting Started with Heroku
@@ -35,11 +35,11 @@ Make sure you have a new repository on Github for your project. You should conti
 
 To deploy a new application to Heroku, you will:
 
-- [ ] [Create a New Heroku App](https://git.generalassemb.ly/ga-wdi-boston/rails-api-template#create-a-new-heroku-app)
-- [ ] [Push `master` to Heroku](https://git.generalassemb.ly/ga-wdi-boston/rails-api-template#push-master-to-heroku)
-- [ ] [Update Heroku's Database](https://git.generalassemb.ly/ga-wdi-boston/rails-api-template#update-herokus-database)
-- [ ] [Setup Your Environment](https://git.generalassemb.ly/ga-wdi-boston/rails-api-template#setup-your-production-environment)
-- [ ] [Check Your Work](https://git.generalassemb.ly/ga-wdi-boston/rails-api-template#run-your-server)
+- [ ] [Create a New Heroku App](https://git.generalassemb.ly/ga-wdi-boston/rails-api-template/blob/master/rails-heroku-deployment-guide.md#create-a-new-heroku-app)
+- [ ] [Push `master` to Heroku](https://git.generalassemb.ly/ga-wdi-boston/rails-api-template/blob/master/rails-heroku-deployment-guide.md#push-master-to-heroku)
+- [ ] [Update Heroku's Database](https://git.generalassemb.ly/ga-wdi-boston/rails-api-template/blob/master/rails-heroku-deployment-guide.md#update-herokus-database)
+- [ ] [Setup Your Environment](https://git.generalassemb.ly/ga-wdi-boston/rails-api-template/blob/master/rails-heroku-deployment-guide.md#setup-your-production-environment)
+- [ ] [Check Your Work](https://git.generalassemb.ly/ga-wdi-boston/rails-api-template/blob/master/rails-heroku-deployment-guide.md#run-your-server)
 
 Head over to the [rails-heroku-deployment-guide](git.generalassemb.ly/ga-wdi-boston/rails-api-template/rails-heroku-deployment-guide.md) to get started.
 
