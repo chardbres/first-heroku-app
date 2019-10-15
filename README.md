@@ -38,10 +38,10 @@ To deploy a new application to Heroku, you will:
 - [ ] [Create a New Heroku App](https://git.generalassemb.ly/ga-wdi-boston/rails-api-template/blob/master/rails-heroku-deployment-guide.md#create-a-new-heroku-app)
 - [ ] [Push `master` to Heroku](https://git.generalassemb.ly/ga-wdi-boston/rails-api-template/blob/master/rails-heroku-deployment-guide.md#push-master-to-heroku)
 - [ ] [Update Heroku's Database](https://git.generalassemb.ly/ga-wdi-boston/rails-api-template/blob/master/rails-heroku-deployment-guide.md#update-herokus-database)
-- [ ] [Setup Your Environment](https://git.generalassemb.ly/ga-wdi-boston/rails-api-template/blob/master/rails-heroku-deployment-guide.md#setup-your-production-environment)
-- [ ] [Check Your Work](https://git.generalassemb.ly/ga-wdi-boston/rails-api-template/blob/master/rails-heroku-deployment-guide.md#run-your-server)
+- [ ] [Set Your Secrets](https://git.generalassemb.ly/ga-wdi-boston/rails-api-template/blob/master/rails-heroku-deployment-guide.md#setup-your-production-environment)
+- [ ] [Check Your Work](https://git.generalassemb.ly/ga-wdi-boston/rails-api-template/blob/master/rails-heroku-deployment-guide.md#check-your-work)
 
-Head over to the [rails-heroku-deployment-guide](git.generalassemb.ly/ga-wdi-boston/rails-api-template/rails-heroku-deployment-guide.md) to get started.
+Head over to the [rails-heroku-deployment-guide](https://git.generalassemb.ly/ga-wdi-boston/rails-api-template/blob/master/rails-heroku-deployment-guide.md) to get started.
 
 ### Connecting a client to your Heroku API
 
